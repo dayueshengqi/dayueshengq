@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Beijing Dayue Shengqi Technology Co., Ltd. - Get in touch with our team for technology solutions, partnerships, mobile app support, and business inquiries.">
+    <meta name="keywords" content="contact Beijing tech company, Dayue Shengqi contact, technology partnership, mobile app support, business inquiries China">
+    <meta name="author" content="Beijing Dayue Shengqi Technology Co., Ltd.">
+    <meta name="robots" content="index, follow">
+    <title>Contact Us | Beijing Dayue Shengqi Technology Co., Ltd.</title>
+    <link rel="canonical" href="https://dayueshengqi.com/contact.html">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0c4a6e 100%);
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 1;
+        }
+
+        .contact-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: -80px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .contact-info-card {
+            background: white;
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-form-card {
+            background: white;
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-header h2 {
+            font-size: 2.5rem;
+            color: #0f172a;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .contact-header p {
+            color: #64748b;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 20px;
+            padding: 24px;
+            background: #f8fafc;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .contact-item:hover {
+            background: white;
+            border-color: #3b82f6;
+            transform: translateX(8px);
+            box-shadow: 0 10px 40px -10px rgba(59, 130, 246, 0.3);
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-icon svg {
+            color: white;
+        }
+
+        .contact-text h4 {
+            font-size: 1.1rem;
+            color: #0f172a;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .contact-text p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .contact-text a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-text a:hover {
+            color: #1d4ed8;
+        }
+
+        .business-hours {
+            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+            padding: 32px;
+            border-radius: 16px;
+            margin-top: 24px;
+        }
+
+        .business-hours h4 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .business-hours p {
+            color: #cbd5e1;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .form-header h3 {
+            font-size: 1.8rem;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .form-header p {
+            color: #64748b;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #334155;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8fafc;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            background: white;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 18px 32px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px -10px rgba(59, 130, 246, 0.5);
+        }
+
+        .support-section {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .support-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+
+        .support-card:hover {
+            transform: translateY(-10px);
+            border-color: #3b82f6;
+            box-shadow: 0 25px 60px -15px rgba(59, 130, 246, 0.3);
+        }
+
+        .support-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .support-icon svg {
+            width: 40px;
+            height: 40px;
+            color: white;
+        }
+
+        .support-card h3 {
+            font-size: 1.3rem;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        .support-card p {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .support-card a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .support-card a:hover {
+            color: #1d4ed8;
+        }
+
+        .map-section {
+            height: 400px;
+            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .map-content {
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .map-content h3 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .map-content p {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .support-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info-card,
+            .contact-form-card {
+                padding: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero {
+                padding: 60px 0 80px;
+            }
+
+            .contact-header h2 {
+                font-size: 2rem;
+            }
+
+            .contact-item {
+                padding: 20px;
+            }
+
+            .contact-icon {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 100 100" width="40" height="40"><circle cx="50" cy="50" r="45" fill="#2563eb"/><path d="M30 55 L45 35 L60 55 L45 75 Z" fill="#ffffff" opacity="0.9"/><circle cx="45" cy="50" r="8" fill="#06b6d4"/></svg>
+                <span>Dayue Shengqi</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="justify-content: center; margin-bottom: 24px;"><a href="index.html" style="color: #94a3b8;">Home</a><span class="separator" style="color: #94a3b8;">/</span><span style="color: white;">Contact</span></nav>
+            <h1 class="page-title animate-fade-in-up" style="text-align: center; color: white; font-size: 3rem; margin-bottom: 16px;">Contact Us</h1>
+            <p class="page-subtitle animate-fade-in-up delay-200" style="text-align: center; color: #cbd5e1; font-size: 1.2rem;">We'd love to hear from you. Get in touch with our team.</p>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-card scroll-animate-left">
+                    <div class="contact-header">
+                        <h2>Get In Touch</h2>
+                        <p>Whether you have questions about our services, need technical support, or want to explore partnership opportunities, we're here to help.</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Office Address</h4>
+                            <p>Building 57, Chezhan Road, Miyun District<br>1st Floor, 2nd Floor<br>Beijing, 100000, China</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>General Inquiries</h4>
+                            <p><a href="mailto:support@dayueshengqi.com">support@dayueshengqi.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Business & Partnerships</h4>
+                            <p><a href="mailto:yuqiang@dayueshengqi.com">yuqiang@dayueshengqi.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Website</h4>
+                            <p><a href="https://dayueshengqi.com">dayueshengqi.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="business-hours">
+                        <h4>
+                            <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                            Business Hours
+                        </h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM (Beijing Time)</p>
+                        <p>Saturday - Sunday: Closed</p>
+                        <p style="margin-top: 12px; color: #94a3b8;">We typically respond within 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-card scroll-animate-right">
+                    <div class="form-header">
+                        <h3>Send Us a Message</h3>
+                        <p>Fill out the form below and we'll get back to you shortly</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Please select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="sales">Sales Inquiry</option>
+                                <option value="mobile-app">Mobile App Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <svg viewBox="0 0 24 24" width="24" height="24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-section">
+        <div class="container">
+            <div class="section-header text-center scroll-animate">
+                <span class="section-badge">Support Channels</span>
+                <h2 class="section-title">How Can We Help?</h2>
+                <p class="section-description">Choose the right contact method for your needs</p>
+            </div>
+
+            <div class="support-grid">
+                <div class="support-card scroll-animate">
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>For technical issues with our services or mobile applications</p>
+                    <a href="mailto:support@dayueshengqi.com">support@dayueshengqi.com</a>
+                </div>
+
+                <div class="support-card scroll-animate">
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Business Inquiries</h3>
+                    <p>For partnerships, bulk orders, and business proposals</p>
+                    <a href="mailto:yuqiang@dayueshengqi.com">yuqiang@dayueshengqi.com</a>
+                </div>
+
+                <div class="support-card scroll-animate">
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>For questions about our mobile applications on Google Play and App Store</p>
+                    <a href="mailto:support@dayueshengqi.com">Get Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-content scroll-animate">
+            <h3>Beijing, China</h3>
+            <p>Headquarters - Miyun District</p>
+            <p style="margin-top: 16px; font-size: 0.95rem;">Serving clients worldwide</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo"><svg viewBox="0 0 100 100" width="32" height="32"><circle cx="50" cy="50" r="45" fill="#2563eb"/><path d="M30 55 L45 35 L60 55 L45 75 Z" fill="#ffffff" opacity="0.9"/><circle cx="45" cy="50" r="8" fill="#06b6d4"/></svg><span>Dayue Shengqi</span></a>
+                    <p class="footer-description">Beijing Dayue Shengqi Technology Co., Ltd. - Professional technology solutions provider for global markets.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Software Development</a></li>
+                        <li><a href="services.html">Mobile Applications</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-links contact-info-list">
+                        <li><svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>Building 57, Chezhan Road, Miyun District, Beijing</span></li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>support@dayueshengqi.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beijing Dayue Shengqi Technology Co., Ltd. All rights reserved.</p>
+                <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><span class="separator">|</span><a href="terms.html">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 15l-6-6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+    <script src="js/main.js"></script>
+</body>
+</html>

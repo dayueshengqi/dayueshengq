@@ -1,0 +1,17 @@
+# robots.txt for dayueshengqi.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dayueshengqi.com/sitemap.xml
+
+# Crawl-delay suggestion for polite crawlers
+Crawl-delay: 1
+
+# Block access to app-ads.txt from non-authorized ad platforms
+User-agent:AdsBot-Google
+Allow: /
+
+User-agent:Googlebot
+Allow: /
